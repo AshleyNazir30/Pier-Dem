@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand */
+  --color-brand: #18181b;
+  --color-brand-hover: #27272a;
+
+  /* Surfaces */
+  --color-surface: #ffffff;
+  --color-surface-page: #f8f8f7;
+  --color-surface-card: #ffffff;
+  --color-surface-elevated: #f4f4f5;
+
+  /* Text */
+  --color-text-primary: #18181b;
+  --color-text-secondary: #52525b;
+  --color-text-muted: #a1a1aa;
+  --color-text-inverse: #fafafa;
+
+  /* Borders */
+  --color-border: #e4e4e7;
+  --color-border-focus: #18181b;
+
+  /* Feedback */
+  --color-error: #b91c1c;
+  --color-error-light: #fef2f2;
+  --color-error-border: #fecaca;
+
+  /* Status - Success (Open) */
+  --color-success: #16a34a;
+  --color-success-light: #f0fdf4;
+  --color-success-text: #15803d;
+
+  /* Status - Neutral (Closed) */
+  --color-neutral: #9ca3af;
+  --color-neutral-light: #f3f4f6;
+  --color-neutral-text: #4b5563;
+
+  /* Skeleton */
+  --color-skeleton: #e4e4e7;
+  --color-skeleton-shine: #f4f4f5;
+
+  /* Accent - using brand dark for consistency */
+  --color-accent: #18181b;
+  --color-accent-light: #f4f4f5;
+}
+
+/* Dark mode overrides */
+.dark {
+  --color-brand: #f4f4f5;
+  --color-brand-hover: #e4e4e7;
+
+  /* Surfaces */
+  --color-surface: #18181b;
+  --color-surface-page: #09090b;
+  --color-surface-card: #1c1c1f;
+  --color-surface-elevated: #27272a;
+
+  /* Text */
+  --color-text-primary: #fafafa;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
+  --color-text-inverse: #18181b;
+
+  /* Borders */
+  --color-border: #27272a;
+  --color-border-focus: #f4f4f5;
+
+  /* Feedback */
+  --color-error: #ef4444;
+  --color-error-light: #1f1315;
+  --color-error-border: #7f1d1d;
+
+  /* Status - Success (Open) */
+  --color-success: #22c55e;
+  --color-success-light: #14532d;
+  --color-success-text: #86efac;
+
+  /* Status - Neutral (Closed) */
+  --color-neutral: #6b7280;
+  --color-neutral-light: #1f2937;
+  --color-neutral-text: #9ca3af;
+
+  /* Skeleton */
+  --color-skeleton: #27272a;
+  --color-skeleton-shine: #3f3f46;
+
+  /* Accent */
+  --color-accent: #f4f4f5;
+  --color-accent-light: #27272a;
+}
+
+html {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
